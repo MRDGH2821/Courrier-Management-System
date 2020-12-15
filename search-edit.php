@@ -25,7 +25,7 @@ isUser();
 
 <body>
     <?php require "header.php";
-?>
+    ?>
     <script language="javascript">
         function validate() {
             if (document.form1.track.value == "") {

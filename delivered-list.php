@@ -37,7 +37,7 @@ $result = mysqli_query($dbConn, $sql);
                 <td width="900">
 
                     <?php require "header.php";
-?>
+                    ?>
                 </td>
             </tr>
 
@@ -118,8 +118,8 @@ $result = mysqli_query($dbConn, $sql);
                             </tr>
                             <?php
 
-    while ($data = mysqli_fetch_array($result)) {
-        extract($data); ?>
+                            while ($data = mysqli_fetch_array($result)) {
+                                extract($data); ?>
                             <tr onMouseOver="this.bgColor='gold';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#FFFFFF">
 
                                 <td class="gentxt" align="center">
@@ -132,9 +132,9 @@ $result = mysqli_query($dbConn, $sql);
                                 <td class="gentxt"><?php echo $pick_date; ?> - <?php echo $pick_time; ?></td>
                                 <td class="gentxt"><?php echo $status; ?></td>
                             </tr>
-                            <?php
-    } //while
-    ?>
+                                <?php
+                            } //while
+                            ?>
                         </tbody>
                     </table>
                     <br>

@@ -308,12 +308,12 @@ while ($data = mysqli_fetch_array($result)) {
 
                                 <td class="style3" bgcolor="#FFFFFF"><?php echo $weight; ?>&nbsp;kg</td>
                             </tr>
-														<tr>
+                                                        <tr>
 
-																<td class="style3" bgcolor="#FFFFFF" align="right">Delivery Boy :</td>
+                                                                <td class="style3" bgcolor="#FFFFFF" align="right">Delivery Boy :</td>
 
-																<td class="style3" bgcolor="#FFFFFF"><?php echo $delivery_boy_name; ?>&nbsp;</td>
-														</tr>
+                                                                <td class="style3" bgcolor="#FFFFFF"><?php echo $delivery_boy_name; ?>&nbsp;</td>
+                                                        </tr>
                             <tr>
 
                                 <td class="style3" bgcolor="#F3F3F3" align="right">Invoice no :</td>
@@ -406,11 +406,11 @@ while ($data = mysqli_fetch_array($result)) {
 
                                         <select name="OfficeName">
                                             <?php
-    while ($data = mysqli_fetch_array($result_1)) {
-        ?>
+                                            while ($data = mysqli_fetch_array($result_1)) {
+                                                ?>
                                             <option value="<?php echo $data['off_name']; ?>"><?php echo $data['off_name']; ?></option>
-                                            <?php
-    } //while ?>
+                                                <?php
+                                            } //while?>
                                         </select>
                                     </td>
                                 </tr>
@@ -521,6 +521,6 @@ while ($data = mysqli_fetch_array($result)) {
 </body>
 
 </html>
-<?php
+    <?php
 }
 ?>

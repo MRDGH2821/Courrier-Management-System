@@ -8,12 +8,11 @@ $cons = $_POST['Consignment'];
 $sql = "SELECT *
 		FROM tbl_courier
 		WHERE cons_no = '$cons'";
-$result = mysqli_query( $dbConn, $sql );
-$no = mysqli_num_rows( $result );
-if ( $no == 1 ) {
-    while ( $data = mysqli_fetch_array( $result ) ) {
-        extract( $data );
-        ?>
+$result = mysqli_query($dbConn, $sql);
+$no = mysqli_num_rows($result);
+if ($no == 1) {
+    while ($data = mysqli_fetch_array($result)) {
+        extract($data); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
@@ -401,7 +400,7 @@ if ( $no == 1 ) {
 </body>
 
 </html>
-<?php
+        <?php
     } //while
 } //if
 else {
@@ -557,8 +556,7 @@ else {
 
                                             <tbody>
                                                 <tr>
-                                                    <h3 style="font-family:Verdana; font-size:12px;">Consignment Number <font color="#FF0000"><?php echo $cons;
-        ?></font> not found. Please verify the Number.<br />
+                                                    <h3 style="font-family:Verdana; font-size:12px;">Consignment Number <font color="#FF0000"><?php echo $cons; ?></font> not found. Please verify the Number.<br />
                                                         <a href="search-edit.php">Go Back</a> to Search Again.
                                                     </h3>
                                                 </tr>
@@ -595,7 +593,7 @@ else {
 
 </html>
 
-<?php
-    }
+    <?php
+}
     //else
-    ?>
+?>

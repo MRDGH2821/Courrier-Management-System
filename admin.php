@@ -16,8 +16,8 @@ isUser();
 <body>
 
     <?php
-require "header.php";
-?>
+    require "header.php";
+    ?>
 
     </td>
     </tr>

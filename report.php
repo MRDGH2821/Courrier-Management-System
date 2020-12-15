@@ -33,7 +33,7 @@ isUser();
             <tr>
                 <td width="780">
                     <?php require "header.php";
-?>
+                    ?>
 
                 </td>
             </tr>

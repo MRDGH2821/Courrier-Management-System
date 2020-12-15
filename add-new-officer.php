@@ -120,7 +120,7 @@ function MM_validateForm() { //v4.0
 
 <body>
     <?php require "header.php";
-?>
+    ?>
 
     </td>
     </tr>
@@ -222,12 +222,12 @@ function MM_validateForm() { //v4.0
                                                             <td>
                                                                 <select name="OfficeName">
                                                                     <?php
-            while ($data = dbFetchAssoc($result)) {
-                ?>
+                                                                    while ($data = dbFetchAssoc($result)) {
+                                                                        ?>
                                                                     <option value="<?php echo $data['off_name']; ?>"><?php echo $data['off_name']; ?></option>
-                                                                    <?php
-            } //while
-            ?>
+                                                                        <?php
+                                                                    } //while
+                                                                    ?>
                                                                 </select>
                                                             </td>
                                                         </tr>

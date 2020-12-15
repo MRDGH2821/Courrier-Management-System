@@ -142,7 +142,7 @@ $result = mysqli_query($dbConn, $sql);
                                                                                                                     <td colspan="3" height="10">
                                                                                                                         <font color="#FF0000" style="font-size:12px;">
                                                                                                                             <?php echo $error;
-                                ?>
+                                                                                                                            ?>
                                                                                                                         </font>
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -167,12 +167,12 @@ $result = mysqli_query($dbConn, $sql);
                                                                                                                     <td>
                                                                                                                         <select name="OfficeName">
                                                                                                                             <?php
-            while ($data = mysqli_fetch_array($result)) {
-                ?>
+                                                                                                                            while ($data = mysqli_fetch_array($result)) {
+                                                                                                                                ?>
                                                                                                                             <option value="<?php echo $data['off_name']; ?>"><?php echo $data['off_name']; ?></option>
-                                                                                                                            <?php
-            } //while
-            ?>
+                                                                                                                                <?php
+                                                                                                                            } //while
+                                                                                                                            ?>
                                                                                                                         </select>
                                                                                                                     </td>
                                                                                                                 </tr>

@@ -35,7 +35,7 @@ $result = mysqli_query($dbConn, $sql);
                 <td width="900">
 
                     <?php require "header.php";
-?>
+                    ?>
                 </td>
             </tr>
 
@@ -114,8 +114,8 @@ $result = mysqli_query($dbConn, $sql);
                             </tr>
                             <?php
 
-    while ($data = mysqli_fetch_array($result)) {
-        extract($data); ?>
+                            while ($data = mysqli_fetch_array($result)) {
+                                extract($data); ?>
                             <tr onMouseOver="this.bgColor='gold';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#FFFFFF" style="height:20px;">
 
                                 <td class="gentxt"><?php echo $off_name; ?></td>
@@ -125,9 +125,9 @@ $result = mysqli_query($dbConn, $sql);
                                 <td class="gentxt"><?php echo $office_time; ?></td>
                                 <td class="gentxt"><?php echo $contact_person; ?></td>
                             </tr>
-                            <?php
-    } //while
-    ?>
+                                <?php
+                            } //while
+                            ?>
                         </tbody>
                     </table>
                     <br>

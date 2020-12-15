@@ -69,8 +69,8 @@
                 </table>
 
                 <?php
-if (isset($_SESSION['user_type'])) { // && $_SESSION['user_type'] == 'admin-role') {
-    ?>
+                if (isset($_SESSION['user_type'])) { // && $_SESSION['user_type'] == 'admin-role') {
+                    ?>
                 <table border="0" cellpadding="0" cellspacing="0" width="900">
                     <tbody>
                         <tr style="height:25px;">
@@ -95,9 +95,9 @@ if (isset($_SESSION['user_type'])) { // && $_SESSION['user_type'] == 'admin-role
                         </tr>
                     </tbody>
                 </table>
-                <?php
-}
-?>
+                                <?php
+                }
+                ?>
                 <table border="0" cellpadding="0" cellspacing="0" width="900">
                     <tbody>
                         <tr style="height:25px;">

@@ -41,7 +41,7 @@ case 'logOut':
 } //switch
 
 function addCons($dbConn)
-{ 
+{
     $Shippername = $_POST['Shippername'];
     $Shipperphone = $_POST['Shipperphone'];
     $Shipperaddress = $_POST['Shipperaddress'];
@@ -120,7 +120,6 @@ function addManager($dbConn)
 
 function addDeliveryBoy($dbConn)
 {
-    
     $DeliveryBoyName = $_POST['DeliveryBoyName'];
     $PhoneNo = $POST['PhoneNo'];
     $OfficeName = $_POST['OfficeName'];
@@ -128,7 +127,6 @@ function addDeliveryBoy($dbConn)
 			VALUES ('$DeliveryBoyName', '$PhoneNo', '$OfficeName', NOW())";
     mysqli_query($dbConn, $sql);
     header('Location: delivery-boy-add-success.php');
-    
 }
 
 function updateStatus($dbConn)

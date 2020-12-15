@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('library.php');
+require_once 'library.php';
 $rand = get_rand_id(8);
 echo $rand;
 
@@ -119,8 +119,8 @@ function MM_validateForm() { //v4.0
 </head>
 
 <body>
-    <?php include("header.php");
-?>
+    <?php require "header.php";
+    ?>
 
     <tr>
         <td bgcolor="#FFFFFF">
@@ -524,7 +524,7 @@ function MM_validateForm() { //v4.0
                                                             <td class="TrackMediumBlue" align="right">Consignment No : </td>
                                                             <td width="13">&nbsp;</td>
                                                             <td width="477"><input name="ConsignmentNo" value="<?php echo strtoupper($rand);
-?>" id="ConsignmentNo" readonly="true" maxlength="13" size="40" type="TEXT">
+                                                            ?>" id="ConsignmentNo" readonly="true" maxlength="13" size="40" type="TEXT">
                                                                 <span class="REDLink">*</span>
                                                             </td>
                                                         </tr>
@@ -533,12 +533,12 @@ function MM_validateForm() { //v4.0
                                                             <td>&nbsp;</td>
                                                             <td><select id="DeliveryBoy" name="DeliveryBoy">
                                                                     <?php
-            while ($data = dbFetchAssoc($result)) {
-                ?>
+                                                                    while ($data = dbFetchAssoc($result)) {
+                                                                        ?>
                                                                     <option value="<?php echo $data['delivery_boy_name']; ?>"><?php echo $data['delivery_boy_name']; ?></option>
-                                                                    <?php
-            } //while
-            ?>
+                                                                        <?php
+                                                                    } //while
+                                                                    ?>
                                                                 </select>
                                                         </tr>
                                                         <tr>

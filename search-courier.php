@@ -397,7 +397,7 @@ if ($no == 1) {
 </body>
 
 </html>
-<?php
+        <?php
     } //while
 } //if
 else {
@@ -608,6 +608,6 @@ else {
 
 
 
-<?php
+    <?php
 } //else
 ?>
